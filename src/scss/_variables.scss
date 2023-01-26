@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-It.woff2') format('woff2'),
+        url('AvenirNextLTPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+//Color Variables
+$white-color: #ffffff;
+$dashboard-bg: #e5e5e5;
+$button-color: #39CDCC;
+$pink-color: #DF18FF;
+$blue-color: #5718FF;
+$orange-color: #F55F44;
+$red-color: #FF3366;
+$font-color-blue: #213F7D;
+$font-color-dark-blue: #545F7D;
+$font-color-yellow: #E9B200;
+$font-color-red-dark: #E4033B;
+$font-color-green: #39CD62;
+
+//Font-sizes variable:
+$heading-size: 40px;
+$subheading-size: 24px;
+$paragraph-big-size: 20px;
+$paragraph-main-size: 16px;
+$paragraph-small-size: 14px;
+$paragraph-smallest-size: 12px;
+
+//fonts-family
+$paragraph-font-family : 'Work Sans', sans-serif;
+$doc-font-family: 'Roboto', sans-serif;
+$heading-font: 'Avenir Next LT Pro';
+
+
+
+
+
+
