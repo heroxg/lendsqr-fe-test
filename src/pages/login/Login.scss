@@ -59,33 +59,32 @@
                 display: flex;
                 flex-direction: column;
                 width: 80%;
-                input[type=email] {
-                    height: 50px;
-                    padding-left: 16px;
-                    border: 2px solid rgba(84, 95, 125, 0.15);
-                    border-radius: 5px;
-                    margin-bottom: 24px;
-                    font-size: $paragraph-small-size;
-                    text-transform: capitalize;
-                    &::placeholder {
-                        color: $font-color-dark-blue;
-                        opacity: 0.6;
-                        font-size: $paragraph-small-size;
-                    }
-                    &:focus-visible {
-                        border-color: $button-color;
-                        outline: $button-color;
-                    }
-                }
-                .pass_wrap {
+                .form_wrap {
                     width: 100%;
                     position: relative;
+                    margin-bottom: 24px;
+                    input[type=email] {
+                        height: 50px;
+                        padding-left: 16px;
+                        border: 2px solid rgba(84, 95, 125, 0.15);
+                        border-radius: 5px;
+                        width: 100%;
+                        font-size: $paragraph-small-size;
+                        &::placeholder {
+                            color: $font-color-dark-blue;
+                            opacity: 0.6;
+                            font-size: $paragraph-small-size;
+                        }
+                        &:focus-visible {
+                            border-color: $button-color;
+                            outline: $button-color;
+                        }
+                    }
                     input[type=password], input[type=text] {
                         height: 50px;
                         padding-left: 16px;
                         border: 2px solid rgba(84, 95, 125, 0.15);
                         border-radius: 5px;
-                        margin-bottom: 24px;
                         font-size: $paragraph-small-size;
                         text-transform: capitalize;
                         width: 100%;
@@ -119,6 +118,12 @@
                             text-transform: uppercase;
                         }
                     }
+                    span.error {
+                        color: $red-color;
+                        font-size: $paragraph-smallest-size;
+                        font-family: $heading-font;
+                        font-weight: 400;
+                    }
                 }
                 input[type=submit] {
                     margin-top: 30px;
@@ -131,8 +136,11 @@
                     font-size: $paragraph-small-size;
                     font-weight: 600;
                     line-height: 19px;
-                    font-family: $heading-font;
+                    font-family: $paragraph-font-family;
                     cursor: pointer;
+                    &:disabled {
+                        cursor: not-allowed;
+                    }
                 }
             }
         }

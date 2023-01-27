@@ -63,68 +63,67 @@
   flex-direction: column;
   width: 80%;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=email] {
-  height: 50px;
-  padding-left: 16px;
-  border: 2px solid rgba(84, 95, 125, 0.15);
-  border-radius: 5px;
-  margin-bottom: 24px;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=email]::-moz-placeholder {
-  color: #545F7D;
-  opacity: 0.6;
-  font-size: 14px;
-}
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=email]:-ms-input-placeholder {
-  color: #545F7D;
-  opacity: 0.6;
-  font-size: 14px;
-}
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=email]::placeholder {
-  color: #545F7D;
-  opacity: 0.6;
-  font-size: 14px;
-}
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=email]:focus-visible {
-  border-color: #39CDCC;
-  outline: #39CDCC;
-}
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap {
   width: 100%;
   position: relative;
+  margin-bottom: 24px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=password], .login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=text] {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email] {
   height: 50px;
   padding-left: 16px;
   border: 2px solid rgba(84, 95, 125, 0.15);
   border-radius: 5px;
-  margin-bottom: 24px;
+  width: 100%;
+  font-size: 14px;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]::-moz-placeholder {
+  color: #545F7D;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]:-ms-input-placeholder {
+  color: #545F7D;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]::placeholder {
+  color: #545F7D;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]:focus-visible {
+  border-color: #39CDCC;
+  outline: #39CDCC;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password], .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text] {
+  height: 50px;
+  padding-left: 16px;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
   font-size: 14px;
   text-transform: capitalize;
   width: 100%;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=password]::-moz-placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=text]::-moz-placeholder {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]::-moz-placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]::-moz-placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=password]:-ms-input-placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=text]:-ms-input-placeholder {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]:-ms-input-placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]:-ms-input-placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=password]::placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=text]::placeholder {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]::placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]::placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=password]:focus-visible, .login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap input[type=text]:focus-visible {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]:focus-visible, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]:focus-visible {
   border-color: #39CDCC;
   outline: #39CDCC;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap .show {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap .show {
   position: absolute !important;
   top: 0 !important;
   right: 0 !important;
@@ -135,7 +134,7 @@
   height: 50px;
   cursor: pointer;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .pass_wrap .show p.password_text {
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap .show p.password_text {
   color: #39CDCC;
   font-family: "Avenir Next LT Pro";
   font-size: 12px;
@@ -143,6 +142,12 @@
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap span.error {
+  color: #FF3366;
+  font-size: 12px;
+  font-family: "Avenir Next LT Pro";
+  font-weight: 400;
 }
 .login_container_inner_wrapper .login_container_inner .login_right form input[type=submit] {
   margin-top: 30px;
@@ -155,6 +160,9 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
-  font-family: "Avenir Next LT Pro";
+  font-family: "Work Sans", sans-serif;
   cursor: pointer;
+}
+.login_container_inner_wrapper .login_container_inner .login_right form input[type=submit]:disabled {
+  cursor: not-allowed;
 }/*# sourceMappingURL=Login.css.map */
