@@ -1,0 +1,81 @@
+@import '../../scss/variables';
+
+header {
+    width: 100%;
+    background-color: $white-color;
+    box-shadow: 0 1px 7px 0px rgb(0 0 0 / 0.11);
+    height: 88px;
+    .header__wrapper {
+        display: flex;
+        padding-right: 15px;
+        padding-left: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .header_left {
+            flex: 2;
+        }
+       .header_center{
+            flex: 2;
+            display: flex;
+            position: relative;
+            input {
+                height: 40px;
+                width: 400px;
+                border: 1px solid rgba(84, 95, 125, 0.15);
+                padding-left: 15px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: $font-color-dark-blue;
+                    opacity: 0.6;
+                    font-size: $paragraph-small-size;
+                }
+                &:focus-visible {
+                    border-color: $button-color;
+                    outline: $button-color;
+                }
+            }
+            button.search-btn {
+                background-color: $button-color;
+                color: $white-color;
+                position: absolute;
+                top:0;
+                right: 0;
+                border: 0;
+                height: 40px;
+                padding: 13px;
+                display: flex;
+                align-items: center;
+                border-radius: 0px 8px 8px 0px;
+            }
+        }
+        .header_right {
+            flex: 6;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            a.doc {
+                text-decoration: underline;
+                text-transform: capitalize;
+                font-family: $doc-font-family;
+                font-weight: 400;
+                color: $font-color-blue;
+                padding-right: 45px;
+            }
+            .notification {
+                color: $font-color-blue;
+                padding-right: 45px;
+            }
+            img.avatar {
+                padding-right: 15px;
+            }
+            .user__name {
+                font-family: $paragraph-font-family;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                color: $font-color-blue;
+            }
+        }
+    }
+}

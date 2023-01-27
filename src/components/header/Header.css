@@ -1,0 +1,89 @@
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.11);
+  height: 88px;
+}
+header .header__wrapper {
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+header .header__wrapper .header_left {
+  flex: 2;
+}
+header .header__wrapper .header_center {
+  flex: 2;
+  display: flex;
+  position: relative;
+}
+header .header__wrapper .header_center input {
+  height: 40px;
+  width: 400px;
+  border: 1px solid rgba(84, 95, 125, 0.15);
+  padding-left: 15px;
+  border-radius: 8px;
+}
+header .header__wrapper .header_center input::-moz-placeholder {
+  color: #545F7D;
+  opacity: 0.6;
+  font-size: 14px;
+}
+header .header__wrapper .header_center input:-ms-input-placeholder {
+  color: #545F7D;
+  opacity: 0.6;
+  font-size: 14px;
+}
+header .header__wrapper .header_center input::placeholder {
+  color: #545F7D;
+  opacity: 0.6;
+  font-size: 14px;
+}
+header .header__wrapper .header_center input:focus-visible {
+  border-color: #39CDCC;
+  outline: #39CDCC;
+}
+header .header__wrapper .header_center button.search-btn {
+  background-color: #39CDCC;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  height: 40px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 8px 8px 0px;
+}
+header .header__wrapper .header_right {
+  flex: 6;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header .header__wrapper .header_right a.doc {
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #213F7D;
+  padding-right: 45px;
+}
+header .header__wrapper .header_right .notification {
+  color: #213F7D;
+  padding-right: 45px;
+}
+header .header__wrapper .header_right img.avatar {
+  padding-right: 15px;
+}
+header .header__wrapper .header_right .user__name {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #213F7D;
+}/*# sourceMappingURL=Header.css.map */
