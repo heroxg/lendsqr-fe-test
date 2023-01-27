@@ -1,0 +1,44 @@
+@media screen and (max-width: 1280px) {
+    .login_container_inner_wrapper {
+        max-width: 1050px !important;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .login_container_inner_wrapper {
+        max-width: 890px !important;
+    }
+}
+@media screen and (max-width: 890px) {
+    img.logo {
+        padding-left: 0 !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .login_right {
+        width: 50%;
+        margin-top: 30px;
+        padding: 70px 30px 70px 30px !important;
+        form {
+            width: 100% !important;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .login_content_wrapper {
+        box-shadow: none !important;
+        .login_left {
+            display: none !important;
+        }
+        .login_right {
+            width: 100% !important;
+            text-align: center;
+            h3 {
+                font-size: 32px !important;
+            }
+            .mobile-logo {
+                display: block !important;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

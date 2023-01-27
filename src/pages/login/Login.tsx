@@ -43,11 +43,15 @@ const Login = () => {
     <div className='login_container'>
         <div className='login_container_inner_wrapper'>
             <div className="login_container_inner">
+                <div className='login_content_wrapper'>
                 <div className="login_left">
                     <img src={MainLogo} alt='lendsqr-logo' className='logo'/>
                     <img src={LoginImage} alt='logo-image' />
                 </div>
                 <div className="login_right">
+                    <div className='mobile-logo'>
+                        <img src={MainLogo} alt='lendsqr-logo' className='logo'/>
+                    </div>
                     <h3>Welcome!</h3>
                     <p className='info'>Enter details to login.</p>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -75,6 +79,7 @@ const Login = () => {
                         disabled={formData.email === "" && formData.password === ""}
                         />
                     </form>
+                </div>
                 </div>
             </div>
         </div>

@@ -6,22 +6,27 @@
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  margin-top: 70px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .login_container_inner_wrapper .login_container_inner {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.login_container_inner_wrapper .login_container_inner .login_left {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_left {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 30px;
+  padding: 70px 30px 70px 30px;
   background: url(../../assets/images/login_bg.png) repeat-y;
   background-position: right;
 }
-.login_container_inner_wrapper .login_container_inner .login_left img.logo {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_left img.logo {
   width: 174px;
   height: auto;
   -o-object-fit: contain;
@@ -29,12 +34,15 @@
   padding-left: 60px;
   margin-bottom: 106px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right {
   width: 50%;
   margin-top: 30px;
-  padding: 30px 30px 70px 70px;
+  padding: 70px 30px 70px 70px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right h3 {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right .mobile-logo {
+  display: none;
+}
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right h3 {
   font-size: 40px;
   color: #213F7D;
   font-weight: 700;
@@ -42,7 +50,7 @@
   line-height: 54px;
   margin-bottom: 10px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right p.info {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right p.info {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -50,7 +58,7 @@
   color: #545F7D;
   margin-bottom: 60px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right p.pass {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right p.pass {
   color: #39CDCC;
   text-transform: uppercase;
   font-weight: 600;
@@ -58,17 +66,17 @@
   font-size: 12px;
   cursor: pointer;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap {
   width: 100%;
   position: relative;
   margin-bottom: 24px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email] {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=email] {
   height: 50px;
   padding-left: 16px;
   border: 2px solid rgba(84, 95, 125, 0.15);
@@ -76,26 +84,26 @@
   width: 100%;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]::-moz-placeholder {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=email]::-moz-placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]:-ms-input-placeholder {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=email]:-ms-input-placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]::placeholder {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=email]::placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=email]:focus-visible {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=email]:focus-visible {
   border-color: #39CDCC;
   outline: #39CDCC;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password], .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text] {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=password], .login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=text] {
   height: 50px;
   padding-left: 16px;
   border: 2px solid rgba(84, 95, 125, 0.15);
@@ -104,26 +112,26 @@
   text-transform: capitalize;
   width: 100%;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]::-moz-placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]::-moz-placeholder {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=password]::-moz-placeholder, .login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=text]::-moz-placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]:-ms-input-placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]:-ms-input-placeholder {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=password]:-ms-input-placeholder, .login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=text]:-ms-input-placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]::placeholder, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]::placeholder {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=password]::placeholder, .login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=text]::placeholder {
   color: #545F7D;
   opacity: 0.6;
   font-size: 14px;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=password]:focus-visible, .login_container_inner_wrapper .login_container_inner .login_right form .form_wrap input[type=text]:focus-visible {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=password]:focus-visible, .login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap input[type=text]:focus-visible {
   border-color: #39CDCC;
   outline: #39CDCC;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap .show {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap .show {
   position: absolute !important;
   top: 0 !important;
   right: 0 !important;
@@ -134,7 +142,7 @@
   height: 50px;
   cursor: pointer;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap .show p.password_text {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap .show p.password_text {
   color: #39CDCC;
   font-family: "Avenir Next LT Pro";
   font-size: 12px;
@@ -143,13 +151,13 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form .form_wrap span.error {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form .form_wrap span.error {
   color: #FF3366;
   font-size: 12px;
   font-family: "Avenir Next LT Pro";
   font-weight: 400;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=submit] {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form input[type=submit] {
   margin-top: 30px;
   background: #39CDCC;
   border-radius: 8px;
@@ -163,6 +171,6 @@
   font-family: "Work Sans", sans-serif;
   cursor: pointer;
 }
-.login_container_inner_wrapper .login_container_inner .login_right form input[type=submit]:disabled {
+.login_container_inner_wrapper .login_container_inner .login_content_wrapper .login_right form input[type=submit]:disabled {
   cursor: not-allowed;
 }/*# sourceMappingURL=Login.css.map */

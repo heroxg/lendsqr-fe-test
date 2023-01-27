@@ -7,139 +7,147 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-    margin-top: 70px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     .login_container_inner {
         display: flex;
         justify-content: center;
-        .login_left {
+        align-items: center;
+        height: 100vh;
+        .login_content_wrapper {
             display: flex;
-            flex-direction: column;
-            width: 50%;
-            padding: 30px;
-            background: url(../../assets/images/login_bg.png)repeat-y;
-            background-position: right;
-            img.logo { 
-                width: 174px;
-                height: auto;
-                object-fit: contain;
-                padding-left: 60px;
-                margin-bottom: 106px;
-            }
-        }
-        .login_right{
-            width: 50%;
-            margin-top: 30px;
-            padding: 30px 30px 70px 70px;
-            h3 {
-                font-size: $heading-size;
-                color: $font-color-blue;
-                font-weight: 700;
-                font-family: $heading-font;
-                line-height: 54px;
-                margin-bottom: 10px;
-            }
-            p.info {
-                font-family: $doc-font-family;
-                font-size: $paragraph-main-size; 
-                font-style: normal;
-                line-height: 27px;
-                color: $font-color-dark-blue;
-                margin-bottom: 60px;
-            }
-            p.pass {
-                color: $button-color;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-family: $heading-font;
-                font-size: $paragraph-smallest-size;
-                cursor: pointer;
-            }
-            form {
+            width: 100%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            .login_left {
                 display: flex;
                 flex-direction: column;
-                width: 80%;
-                .form_wrap {
-                    width: 100%;
-                    position: relative;
-                    margin-bottom: 24px;
-                    input[type=email] {
-                        height: 50px;
-                        padding-left: 16px;
-                        border: 2px solid rgba(84, 95, 125, 0.15);
-                        border-radius: 5px;
-                        width: 100%;
-                        font-size: $paragraph-small-size;
-                        &::placeholder {
-                            color: $font-color-dark-blue;
-                            opacity: 0.6;
-                            font-size: $paragraph-small-size;
-                        }
-                        &:focus-visible {
-                            border-color: $button-color;
-                            outline: $button-color;
-                        }
-                    }
-                    input[type=password], input[type=text] {
-                        height: 50px;
-                        padding-left: 16px;
-                        border: 2px solid rgba(84, 95, 125, 0.15);
-                        border-radius: 5px;
-                        font-size: $paragraph-small-size;
-                        text-transform: capitalize;
-                        width: 100%;
-                        &::placeholder {
-                            color: $font-color-dark-blue;
-                            opacity: 0.6;
-                            font-size: $paragraph-small-size;
-                        }
-                        &:focus-visible {
-                            border-color: $button-color;
-                            outline: $button-color;
-                        }
-                    }
-                    .show {
-                        position: absolute !important;
-                        top: 0 !important;
-                        right: 0 !important;
-                        padding-right: 15px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: right;
-                        height: 50px;
-                        cursor: pointer;
-                        p.password_text {
-                            color: $button-color;
-                            font-family: $heading-font;
-                            font-size: $paragraph-smallest-size;
-                            font-weight: 600;
-                            line-height: 16px;
-                            letter-spacing: 0.1em;
-                            text-transform: uppercase;
-                        }
-                    }
-                    span.error {
-                        color: $red-color;
-                        font-size: $paragraph-smallest-size;
-                        font-family: $heading-font;
-                        font-weight: 400;
-                    }
+                width: 50%;
+                padding: 70px 30px 70px 30px;
+                background: url(../../assets/images/login_bg.png)repeat-y;
+                background-position: right;
+                img.logo { 
+                    width: 174px;
+                    height: auto;
+                    object-fit: contain;
+                    padding-left: 60px;
+                    margin-bottom: 106px;
                 }
-                input[type=submit] {
-                    margin-top: 30px;
-                    background: $button-color;
-                    border-radius: 8px;
-                    height: 48px;
-                    border: 0;
-                    color: $white-color;
+            }
+            .login_right{
+                width: 50%;
+                margin-top: 30px;
+                padding: 70px 30px 70px 70px;
+                .mobile-logo {
+                    display: none;
+                }
+                h3 {
+                    font-size: $heading-size;
+                    color: $font-color-blue;
+                    font-weight: 700;
+                    font-family: $heading-font;
+                    line-height: 54px;
+                    margin-bottom: 10px;
+                }
+                p.info {
+                    font-family: $doc-font-family;
+                    font-size: $paragraph-main-size; 
+                    font-style: normal;
+                    line-height: 27px;
+                    color: $font-color-dark-blue;
+                    margin-bottom: 60px;
+                }
+                p.pass {
+                    color: $button-color;
                     text-transform: uppercase;
-                    font-size: $paragraph-small-size;
                     font-weight: 600;
-                    line-height: 19px;
-                    font-family: $paragraph-font-family;
+                    font-family: $heading-font;
+                    font-size: $paragraph-smallest-size;
                     cursor: pointer;
-                    &:disabled {
-                        cursor: not-allowed;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    .form_wrap {
+                        width: 100%;
+                        position: relative;
+                        margin-bottom: 24px;
+                        input[type=email] {
+                            height: 50px;
+                            padding-left: 16px;
+                            border: 2px solid rgba(84, 95, 125, 0.15);
+                            border-radius: 5px;
+                            width: 100%;
+                            font-size: $paragraph-small-size;
+                            &::placeholder {
+                                color: $font-color-dark-blue;
+                                opacity: 0.6;
+                                font-size: $paragraph-small-size;
+                            }
+                            &:focus-visible {
+                                border-color: $button-color;
+                                outline: $button-color;
+                            }
+                        }
+                        input[type=password], input[type=text] {
+                            height: 50px;
+                            padding-left: 16px;
+                            border: 2px solid rgba(84, 95, 125, 0.15);
+                            border-radius: 5px;
+                            font-size: $paragraph-small-size;
+                            text-transform: capitalize;
+                            width: 100%;
+                            &::placeholder {
+                                color: $font-color-dark-blue;
+                                opacity: 0.6;
+                                font-size: $paragraph-small-size;
+                            }
+                            &:focus-visible {
+                                border-color: $button-color;
+                                outline: $button-color;
+                            }
+                        }
+                        .show {
+                            position: absolute !important;
+                            top: 0 !important;
+                            right: 0 !important;
+                            padding-right: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: right;
+                            height: 50px;
+                            cursor: pointer;
+                            p.password_text {
+                                color: $button-color;
+                                font-family: $heading-font;
+                                font-size: $paragraph-smallest-size;
+                                font-weight: 600;
+                                line-height: 16px;
+                                letter-spacing: 0.1em;
+                                text-transform: uppercase;
+                            }
+                        }
+                        span.error {
+                            color: $red-color;
+                            font-size: $paragraph-smallest-size;
+                            font-family: $heading-font;
+                            font-weight: 400;
+                        }
+                    }
+                    input[type=submit] {
+                        margin-top: 30px;
+                        background: $button-color;
+                        border-radius: 8px;
+                        height: 48px;
+                        border: 0;
+                        color: $white-color;
+                        text-transform: uppercase;
+                        font-size: $paragraph-small-size;
+                        font-weight: 600;
+                        line-height: 19px;
+                        font-family: $paragraph-font-family;
+                        cursor: pointer;
+                        &:disabled {
+                            cursor: not-allowed;
+                        }
                     }
                 }
             }
