@@ -6,14 +6,14 @@ const Guarantor = () => {
   return (
     <div>
       <Header />
-      <div className='main__wrapper'>
-        <Sidebar />
-        <div className='main__content'>
-            <div className='main__content__inner'>
-                <h1>Guarantor</h1>
+        <div className='main__wrapper'>
+            <Sidebar />
+            <div className='main__content'>
+                <div className='main__content__inner'>
+                    <h1>Guarantor</h1>
+                </div>
             </div>
         </div>
-    </div>
     </div>
   )
 }

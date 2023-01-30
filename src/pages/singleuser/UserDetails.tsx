@@ -201,7 +201,7 @@ const UserDetails = () => {
         </div>
         
         <div className='personal__info__row'>
-            <h3>socials</h3>
+            <h3>Socials</h3>
             <div className='personal__info'>
                 <div className='personal__info__wrap'>
                     <p>twitter</p>

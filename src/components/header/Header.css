@@ -19,15 +19,17 @@ header .header__wrapper {
 header .header__wrapper .header_left {
   flex: 2;
 }
+header .header__wrapper .header_left .mobile_menu {
+  display: none;
+}
 header .header__wrapper .header_center {
   flex: 2;
   display: flex;
   position: relative;
-  padding-left: 40px;
 }
 header .header__wrapper .header_center input {
   height: 40px;
-  width: 400px;
+  width: 100%;
   border: 1px solid rgba(84, 95, 125, 0.15);
   padding-left: 15px;
   border-radius: 8px;

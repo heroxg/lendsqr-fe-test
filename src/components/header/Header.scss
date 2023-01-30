@@ -17,15 +17,17 @@ header {
         height: 100%;
         .header_left {
             flex: 2;
+            .mobile_menu {
+                display: none;
+            }
         }
        .header_center{
             flex: 2;
             display: flex;
             position: relative;
-            padding-left: 40px;
             input {
                 height: 40px;
-                width: 400px;
+                width: 100%;
                 border: 1px solid rgba(84, 95, 125, 0.15);
                 padding-left: 15px;
                 border-radius: 8px;
