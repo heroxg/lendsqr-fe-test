@@ -3,6 +3,10 @@ header {
   background-color: #ffffff;
   box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.11);
   height: 88px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 header .header__wrapper {
   display: flex;
@@ -19,6 +23,7 @@ header .header__wrapper .header_center {
   flex: 2;
   display: flex;
   position: relative;
+  padding-left: 40px;
 }
 header .header__wrapper .header_center input {
   height: 40px;

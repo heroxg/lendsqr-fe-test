@@ -1,0 +1,16 @@
+.menu__heading li span {
+  padding-top: 5px;
+}
+.menu__heading li:first-child {
+  margin-bottom: 52px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+  cursor: pointer;
+  padding-left: 15px;
+}
+.menu__heading li:last-child {
+  margin-bottom: 41px;
+}/*# sourceMappingURL=Sidebar.css.map */

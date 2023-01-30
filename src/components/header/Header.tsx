@@ -3,13 +3,16 @@ import Logo from '../../assets/images/dashboard_logo.png'
 import {SearchOutlined, NotificationsNone, ArrowDropDown } from '@material-ui/icons'
 import Avatar from '../../assets/images/avatar.png'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header>
         <div className="header__wrapper">
             <div className="header_left">
-                <img src={Logo} alt="logo"/>
+                <Link to="/">
+                    <img src={Logo} alt="logo"/>
+                </Link>
             </div>
             <div className="header_center">
                 <div className='search__wrap'>
