@@ -37,6 +37,7 @@ const Login = () => {
     //handle form submit
     const onSubmit: SubmitHandler<LoginInput> = formData => {
         console.log(formData.email);
+        window.location.assign('/users');
     }
 
   return (

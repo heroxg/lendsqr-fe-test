@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import UsersCard from '../../components/userscard/UsersCard'
 import {UsersInfo} from '../../../src/usersInfo';
-import UsersTables from '../../components/users_tables/UsersTables';
+import CustomTable from '../../components/custom_table/CustomTable';
+import './Users.css'
 
 const Users = () => {
     const usersSummary = UsersInfo;
@@ -17,7 +18,9 @@ const Users = () => {
         })}
       </div>
       <div className='dashboard__content'>
-        <UsersTables  />
+        <div className='table__wrapper'>
+            <CustomTable />
+        </div>
       </div>
     </div>
   )

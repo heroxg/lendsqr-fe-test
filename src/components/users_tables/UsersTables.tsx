@@ -67,7 +67,7 @@ const UsersTables = () => {
         console.log(res.data);
     }
 
-    console.log(data)
+    // console.log(data)
     
     useEffect(() => {
         fetchTableData();
